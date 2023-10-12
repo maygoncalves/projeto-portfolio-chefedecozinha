@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
+
 
 :root{
     --cor00:#592A40;
@@ -14,6 +16,8 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-1:'Amita', cursive;
     --fonte-2:'Dancing Script', cursive;
+    --fonte3: 'DM Serif Display', serif;
+    
 
 
 }
@@ -21,8 +25,126 @@
     padding: 0px;
     margin: 0px;
 }
+body, html{
+    background-image: url(../imagens/fundo.jpg);
+    
+    background-position: center right;
+    background-repeat: no-repeat;
+    font-family: var(--fonte-padrao);
+}
+header{
+   background-image: url(../imagens/h1.2.jpg);
+   background-position: center left;
+   text-align: center;
+   padding-top: 40px;
+   min-height: 150px;
+   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.315);
+  
+}
+header h1{
+    color: #f7f0ec;
+    font-family: var(--fonte-1);
+    font-size: 3em;
+    font-weight: normal;
+    padding-bottom: 40px;
+    
+}
+span#burguer{
+    background-color:var(--cor00);
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burguer:hover{
+    background-color: var(--cor04);
+    color: white;
+}
+menu{
+    display: none;
+    padding: 10px;
+
+    
+    
+}
+menu li{
+    list-style: none;
+}
+header a{
+   text-decoration: none;
+   background-color: var(--cor00);
+   display: block;
+   margin-bottom: 10px;
+   padding: 10px;
+   color:var(--cor04);
+   border-radius: 5px;
+   
+}
+header a:hover{
+    background-color: var(--cor01);
+    color: white;
+}
 main{
-    background-color: var(--cor03);
-    margin: 10px;
-    padding: 40px;
+    margin: auto;
+    min-width: 300px;
+    max-width: 900px;
+    background-color: #c3c8d8;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+   
+}
+main img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.384);
+    
+    
+}
+main article p{
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    font-family: var(--fonte-2);
+    font-size: 3em;
+    color:#592A40
+}
+main section p{
+    font-family: var(--fonte-3);
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 2em;
+    padding-bottom: 2em;
+
+}
+section.imagem{
+    padding: 50%;
+    padding-top: 100%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #0D0A0C;
+    margin-bottom: 20px;
+    background-size: cover; 
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.384);    
+    
+}
+section#hugocurso{
+    background-image: url(../imagens/hugocursopizza.jpeg);
+    background-position: center top;
+    
+    
+}
+footer{
+    background-color: #0D0A0C;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor04);
+}
+footer a:hover{
+    color: white;
 }

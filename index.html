@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
     <title>Portfólio Chefe Hugo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <h1>Chefe Hugo Ferreira</h1>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#">QUEM SOU EU</a>
-            <a href="#">TRABALHOS</a>
-            <a href="">CONTATO</a>
-        </nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">QUEM SOU EU</a></li>
+                <li><a href="#">TRABALHOS</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </menu>
     </header>
    <main>
      <picture>
@@ -39,24 +43,34 @@
 
             Em busca de aprimorar meus conhecimentos e habilidades, decidi ingressar no curso de gastronomia do Senac de Campos do Jordão. No entanto, o destino me levou por outros caminhos e acabei me afastando dessa paixão. Por incríveis 18 anos, atuei como técnico, supervisor e coordenador em uma empresa de telecomunicações.</p>
         </section>
-
         <section class="imagem" id="hugocurso">
 
         </section>
 
+
         <section >
             <p>Foi por incentivo de minha esposa que decidi retornar ao que amo, pois nunca é tarde para fazer aquilo que nos apaixona. Com determinação, comecei um curso no Gastronomia Mix e, após 18 longos anos, finalmente fiz a tão esperada transição de carreira. Desde então, tenho atuado como subchef, hamburgueiro artesanal, gerente de restaurante, personal chef e, atualmente, estou exercendo a posição de chefe de cozinha.
         </p>
-        </section>
+        
 
-            Minha paixão pela culinária se mantém incandescente e me empenho todos os dias para proporcionar aos meus clientes e convidados experiências gastronômicas inesquecíveis. Afinal, cozinhar é mais do que um trabalho para mim, é uma forma de expressar meu amor pela comida e pela arte de transformar ingredientes em verdadeiras obras culinárias.
+            <p>Minha paixão pela culinária se mantém incandescente e me empenho todos os dias para proporcionar aos meus clientes e convidados experiências gastronômicas inesquecíveis. Afinal, cozinhar é mais do que um trabalho para mim, é uma forma de expressar meu amor pela comida e pela arte de transformar ingredientes em verdadeiras obras culinárias.
 
             Estou sempre em busca de novos desafios e oportunidades para aprimorar minhas técnicas e conhecimentos. Cada prato que preparo é uma oportunidade de transmitir minha paixão e dedicação aos amantes da boa comida. Convido você a conhecer mais sobre meu trabalho, explorar meu portfólio e quem sabe embarcar nessa deliciosa jornada gastronômica ao meu lado.</p>
         </section>
     </main>
+
     <footer>
         <p>Site desenvolvido por <a href="#">Mayara Gonçalves</a></p>
     </footer>
 
+    <script>
+        function clickMenu(){
+           if( menu.style.display =='block'){
+                menu.style.display='none'
+           }else{
+            menu.style.display='block'
+           }
+        }
+    </script>
 </body>
 </html>
